@@ -1,0 +1,166 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+	"pages": [ 
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom"
+      }
+    },{
+      "path": "pages/login/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },{
+      "path": "pages/login/userAuth",
+      "style": {
+        "navigationBarTitleText": "个人认证"
+      }
+    },{
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/statistics/index",
+      "style": {
+        "navigationBarTitleText": "概览"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        {
+          "path": "finance/index",
+          "style": {
+            "navigationBarTitleText": "融资管理"
+          }
+        },{
+          "path": "finance/detail",
+          "style": {
+            "navigationBarTitleText": "融资详情"
+          }
+        },{
+          "path": "finance/financeDetail",
+          "style": {
+            "navigationBarTitleText": "融资进展详情"
+          }
+        },{
+          "path": "help/index",
+          "style": {
+            "navigationBarTitleText": "帮助中心"
+          }
+        },{
+          "path": "message/detail",
+          "style": {
+            "navigationBarTitleText": "消息详情"
+          }
+        },{
+          "path": "message/index",
+          "style": {
+            "navigationBarTitleText": "消息中心"
+          }
+        },{
+          "path": "invoice/detail",
+          "style": {
+            "navigationBarTitleText": "发票详情"
+          }
+        },{
+          "path": "invoice/add",
+          "style": {
+            "navigationBarTitleText": "单据管理"
+          }
+        },{
+          "path": "invoice/index",
+          "style": {
+            "navigationBarTitleText": "单据管理"
+          }
+        },{
+          "path": "openPay/detail",
+          "style": {
+            "navigationBarTitleText": "流转详情"
+          }
+        },{
+          "path": "openPay/financeDetail",
+          "style": {
+            "navigationBarTitleText": "融资详情"
+          }
+        },{
+          "path": "openPay/index",
+          "style": {
+            "navigationBarTitleText": "凭证流转"
+          }
+        },{
+          "path": "openCrcl/detail",
+          "style": {
+            "navigationBarTitleText": "开立详情"
+          }
+        },{
+          "path": "openCrcl/openDetail",
+          "style": {
+            "navigationBarTitleText": "开立详情"
+          }
+        },{
+          "path": "openCrcl/repayDetail",
+          "style": {
+            "navigationBarTitleText": "还款详情"
+          }
+        },{
+          "path": "openCrcl/index",
+          "style": {
+            "navigationBarTitleText": "凭证开立",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "propertyInquiry/index",
+          "style": {
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#2C7FFA",
+            "navigationBarTitleText": "物权查询"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "确信",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#f2f2f2"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#2C7FFA",
+    "color": "#9BA0A8",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my-select.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
